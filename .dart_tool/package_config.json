@@ -296,6 +296,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "simple_gesture_detector",
+      "rootUri": "file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/simple_gesture_detector-0.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///E:/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -330,6 +336,12 @@
       "rootUri": "file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/sweph-2.10.3+18",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "table_calendar",
+      "rootUri": "file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/table_calendar-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "term_glyph",
@@ -392,7 +404,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-08-16T15:13:29.135736Z",
+  "generated": "2025-08-17T10:23:33.188080Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///E:/flutter",

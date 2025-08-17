@@ -182,6 +182,10 @@ shared_preferences_windows
 3.3
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/shared_preferences_windows-2.4.1/
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/shared_preferences_windows-2.4.1/lib/
+simple_gesture_detector
+2.12
+file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/simple_gesture_detector-0.2.1/
+file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/simple_gesture_detector-0.2.1/lib/
 source_span
 3.1
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/source_span-1.10.1/
@@ -202,6 +206,10 @@ sweph
 2.19
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/sweph-2.10.3+18/
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/sweph-2.10.3+18/lib/
+table_calendar
+3.0
+file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/table_calendar-3.2.0/
+file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/table_calendar-3.2.0/lib/
 term_glyph
 3.1
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/term_glyph-1.2.2/
@@ -238,10 +246,6 @@ xdg_directories
 3.3
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/xdg_directories-1.1.0/
 file:///D:/saan_studio/lioluna/build/path_provider_android/hosted/pub.dev/xdg_directories-1.1.0/lib/
-lioluna
-3.7
-file:///E:/CODE/Void-of-course/
-file:///E:/CODE/Void-of-course/lib/
 sky_engine
 3.7
 file:///E:/flutter/bin/cache/pkg/sky_engine/
@@ -258,4 +262,8 @@ flutter_web_plugins
 3.7
 file:///E:/flutter/packages/flutter_web_plugins/
 file:///E:/flutter/packages/flutter_web_plugins/lib/
+lioluna
+3.7
+file:///e:/CODE/Void-of-course/
+file:///e:/CODE/Void-of-course/lib/
 2
