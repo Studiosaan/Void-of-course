@@ -315,7 +315,13 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'{minutesRemaining} minutes until Void of Course begins.'**
-  String vocStartsInMinutes(Object minutesRemaining);
+  String vocStartsInMinutes(int minutesRemaining);
+
+  /// No description provided for @vocStartsInHours.
+  ///
+  /// In en, this message translates to:
+  /// **'Void of Course begins in {count} hours.'**
+  String vocStartsInHours(int count);
 
   /// No description provided for @vocStartsSoon.
   ///
@@ -329,12 +335,6 @@ abstract class AppLocalizations {
   /// **'Void of Course Notification'**
   String get vocNotificationTitle;
 
-  /// No description provided for @vocStartsInOneHour.
-  ///
-  /// In en, this message translates to:
-  /// **'Void of Course begins in 1 hour.'**
-  String get vocStartsInOneHour;
-
   /// No description provided for @vocOngoingTitle.
   ///
   /// In en, this message translates to:
@@ -346,6 +346,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Currently in Void of Course period.'**
   String get vocOngoingBody;
+
+  /// No description provided for @vocEndedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Void of Course Ended'**
+  String get vocEndedTitle;
+
+  /// No description provided for @vocEndedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The Void of Course period has ended.'**
+  String get vocEndedBody;
 
   /// No description provided for @nextMoonPhaseTimePassed.
   ///
@@ -374,8 +386,26 @@ abstract class AppLocalizations {
   /// No description provided for @voidAlarmExactAlarmDeniedMessage.
   ///
   /// In en, this message translates to:
-  /// **'Permission granted, but please enable \'Alarms & Reminders\' in the app\'s system settings for the alarm to work correctly.'**
+  /// **'Please allow the *Alarms & Reminders* permission in the app settings.'**
   String get voidAlarmExactAlarmDeniedMessage;
+
+  /// No description provided for @noUpcomingVocFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No upcoming Void of Course period found or it has passed. No alarm scheduled.'**
+  String get noUpcomingVocFound;
+
+  /// No description provided for @errorSchedulingAlarm.
+  ///
+  /// In en, this message translates to:
+  /// **'Error scheduling alarm'**
+  String get errorSchedulingAlarm;
+
+  /// No description provided for @errorShowingImmediateAlarm.
+  ///
+  /// In en, this message translates to:
+  /// **'Error showing immediate alarm'**
+  String get errorShowingImmediateAlarm;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -121,8 +121,25 @@ class AppLocalizationsKo extends AppLocalizations {
   String get calculationError => '계산 중 오류 발생';
 
   @override
-  String vocStartsInMinutes(Object minutesRemaining) {
-    return '$minutesRemaining분 후에 보이드가 시작됩니다.';
+  String vocStartsInMinutes(int minutesRemaining) {
+    final intl.NumberFormat minutesRemainingNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String minutesRemainingString = minutesRemainingNumberFormat.format(minutesRemaining);
+
+    return '$minutesRemainingString분 후에 보이드가 시작됩니다.';
+  }
+
+  @override
+  String vocStartsInHours(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String countString = countNumberFormat.format(count);
+
+    return '$countString시간 후에 보이드가 시작됩니다.';
   }
 
   @override
@@ -132,28 +149,40 @@ class AppLocalizationsKo extends AppLocalizations {
   String get vocNotificationTitle => 'Void of Course 알림';
 
   @override
-  String get vocStartsInOneHour => '1시간 후에 보이드가 시작됩니다.';
-
-  @override
   String get vocOngoingTitle => '보이드 중';
 
   @override
-  String get vocOngoingBody => '현재 보이드 오브 코스 기간입니다.';
+  String get vocOngoingBody => '지금은 보이드 시간입니다.';
 
   @override
-  String get nextMoonPhaseTimePassed => 'Next Moon Phase time has passed.';
+  String get vocEndedTitle => '보이드 종료';
 
   @override
-  String get moonSignEndTimePassed => 'Moon Sign end time has passed.';
+  String get vocEndedBody => '보이드가 종료되었습니다.';
 
   @override
-  String get vocEndTimePassed => 'VOC end time has passed.';
+  String get nextMoonPhaseTimePassed => '다음 달 위상 시간이 지났습니다.';
+
+  @override
+  String get moonSignEndTimePassed => '다음 달 싸인으로의 진입 시간이 지났습니다.';
+
+  @override
+  String get vocEndTimePassed => '보이드 기간이 종료되었습니다.';
 
   @override
   String timeToRefreshData(Object refreshReason) {
-    return 'Time to refresh data: $refreshReason. Refreshing...';
+    return '데이터를 새로고침할 시간입니다: $refreshReason. 새로고침 중...';
   }
 
   @override
-  String get voidAlarmExactAlarmDeniedMessage => '알림 권한은 허용되었지만, 정확한 알람을 위해 추가 권한이 필요합니다. 앱 설정에서 \'알람 및 리마인더\' 권한을 허용해주세요.';
+  String get voidAlarmExactAlarmDeniedMessage => '앱 설정에서 \'알람 및 리마인더\' 권한을 허용해주세요.';
+
+  @override
+  String get noUpcomingVocFound => '선택된 날짜에 예정된 보이드 기간이 없거나 이미 지났습니다. 알람이 예약되지 않았습니다.';
+
+  @override
+  String get errorSchedulingAlarm => '알람 예약 중 오류 발생';
+
+  @override
+  String get errorShowingImmediateAlarm => '즉시 알람 표시 중 오류 발생';
 }

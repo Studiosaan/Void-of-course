@@ -121,8 +121,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get calculationError => 'Error during calculation';
 
   @override
-  String vocStartsInMinutes(Object minutesRemaining) {
-    return '$minutesRemaining minutes until Void of Course begins.';
+  String vocStartsInMinutes(int minutesRemaining) {
+    final intl.NumberFormat minutesRemainingNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String minutesRemainingString = minutesRemainingNumberFormat.format(minutesRemaining);
+
+    return '$minutesRemainingString minutes until Void of Course begins.';
+  }
+
+  @override
+  String vocStartsInHours(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String countString = countNumberFormat.format(count);
+
+    return 'Void of Course begins in $countString hours.';
   }
 
   @override
@@ -132,13 +149,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get vocNotificationTitle => 'Void of Course Notification';
 
   @override
-  String get vocStartsInOneHour => 'Void of Course begins in 1 hour.';
-
-  @override
   String get vocOngoingTitle => 'Void of Course in Progress';
 
   @override
   String get vocOngoingBody => 'Currently in Void of Course period.';
+
+  @override
+  String get vocEndedTitle => 'Void of Course Ended';
+
+  @override
+  String get vocEndedBody => 'The Void of Course period has ended.';
 
   @override
   String get nextMoonPhaseTimePassed => 'Next Moon Phase time has passed.';
@@ -155,5 +175,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get voidAlarmExactAlarmDeniedMessage => 'Permission granted, but please enable \'Alarms & Reminders\' in the app\'s system settings for the alarm to work correctly.';
+  String get voidAlarmExactAlarmDeniedMessage => 'Please allow the *Alarms & Reminders* permission in the app settings.';
+
+  @override
+  String get noUpcomingVocFound => 'No upcoming Void of Course period found or it has passed. No alarm scheduled.';
+
+  @override
+  String get errorSchedulingAlarm => 'Error scheduling alarm';
+
+  @override
+  String get errorShowingImmediateAlarm => 'Error showing immediate alarm';
 }
