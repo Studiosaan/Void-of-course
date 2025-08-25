@@ -155,6 +155,24 @@ abstract class AppLocalizations {
   /// **'Void alarm has been deactivated.'**
   String get voidAlarmDisabledMessage;
 
+  /// No description provided for @voidAlarmTimeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Alarm Time'**
+  String get voidAlarmTimeTitle;
+
+  /// Unit for void alarm time setting
+  ///
+  /// In en, this message translates to:
+  /// **'{count} hours before'**
+  String voidAlarmTimeUnit(int count);
+
+  /// Message shown when void alarm time is set
+  ///
+  /// In en, this message translates to:
+  /// **'Void alarm time set to {count} hours before.'**
+  String voidAlarmTimeSetMessage(int count);
+
   /// No description provided for @feedbackTitle.
   ///
   /// In en, this message translates to:
@@ -194,7 +212,7 @@ abstract class AppLocalizations {
   /// No description provided for @whoAreWeSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'• Arion Ayin\'s Mission: \nFathoming the world with the eyes of a lion\n'**
+  /// **'• Arion Ayin\'s Mission : Fathoming the world with the eyes of a lion'**
   String get whoAreWeSubtitle;
 
   /// No description provided for @whoIsItUsefulForTitle.
@@ -206,7 +224,7 @@ abstract class AppLocalizations {
   /// No description provided for @whoIsItUsefulForSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'• Those who need simple date selection\n• Those who need Void of Course calculations\n• Those who need an indicator for action\n'**
+  /// **'• Those who need simple date selection\n• Those who need Void of Course calculations\n• Those who need an indicator for action'**
   String get whoIsItUsefulForSubtitle;
 
   /// No description provided for @whyDidWeMakeThisAppTitle.
@@ -218,7 +236,7 @@ abstract class AppLocalizations {
   /// No description provided for @whyDidWeMakeThisAppSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'• With the hope that anyone can easily \n  access this information.\n'**
+  /// **'• With the hope that anyone can easily access this information.'**
   String get whyDidWeMakeThisAppSubtitle;
 
   /// No description provided for @copyrightText.
@@ -226,6 +244,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'© 2025 Arion Ayin. All rights reserved.'**
   String get copyrightText;
+
+  /// No description provided for @newMoon.
+  ///
+  /// In en, this message translates to:
+  /// **'New Moon'**
+  String get newMoon;
+
+  /// No description provided for @crescentMoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Crescent Moon'**
+  String get crescentMoon;
+
+  /// No description provided for @firstQuarter.
+  ///
+  /// In en, this message translates to:
+  /// **'First Quarter'**
+  String get firstQuarter;
+
+  /// No description provided for @gibbousMoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Gibbous Moon'**
+  String get gibbousMoon;
+
+  /// No description provided for @fullMoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Full Moon'**
+  String get fullMoon;
+
+  /// No description provided for @disseminatingMoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Disseminating Moon'**
+  String get disseminatingMoon;
+
+  /// No description provided for @lastQuarter.
+  ///
+  /// In en, this message translates to:
+  /// **'Last Quarter'**
+  String get lastQuarter;
+
+  /// No description provided for @balsamicMoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Balsamic Moon'**
+  String get balsamicMoon;
+
+  /// No description provided for @sunMoonPositionError.
+  ///
+  /// In en, this message translates to:
+  /// **'Sun or Moon position not available.'**
+  String get sunMoonPositionError;
+
+  /// No description provided for @initializationError.
+  ///
+  /// In en, this message translates to:
+  /// **'Initialization Error'**
+  String get initializationError;
+
+  /// No description provided for @calculationError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error during calculation'**
+  String get calculationError;
+
+  /// No description provided for @vocStartsInMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutesRemaining} minutes until Void of Course begins.'**
+  String vocStartsInMinutes(Object minutesRemaining);
+
+  /// No description provided for @vocStartsSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Void of Course begins soon.'**
+  String get vocStartsSoon;
+
+  /// No description provided for @vocNotificationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Void of Course Notification'**
+  String get vocNotificationTitle;
+
+  /// No description provided for @vocStartsInOneHour.
+  ///
+  /// In en, this message translates to:
+  /// **'Void of Course begins in 1 hour.'**
+  String get vocStartsInOneHour;
+
+  /// No description provided for @vocOngoingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Void of Course in Progress'**
+  String get vocOngoingTitle;
+
+  /// No description provided for @vocOngoingBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Currently in Void of Course period.'**
+  String get vocOngoingBody;
+
+  /// No description provided for @nextMoonPhaseTimePassed.
+  ///
+  /// In en, this message translates to:
+  /// **'Next Moon Phase time has passed.'**
+  String get nextMoonPhaseTimePassed;
+
+  /// No description provided for @moonSignEndTimePassed.
+  ///
+  /// In en, this message translates to:
+  /// **'Moon Sign end time has passed.'**
+  String get moonSignEndTimePassed;
+
+  /// No description provided for @vocEndTimePassed.
+  ///
+  /// In en, this message translates to:
+  /// **'VOC end time has passed.'**
+  String get vocEndTimePassed;
+
+  /// No description provided for @timeToRefreshData.
+  ///
+  /// In en, this message translates to:
+  /// **'Time to refresh data: {refreshReason}. Refreshing...'**
+  String timeToRefreshData(Object refreshReason);
+
+  /// No description provided for @voidAlarmExactAlarmDeniedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Permission granted, but please enable \'Alarms & Reminders\' in the app\'s system settings for the alarm to work correctly.'**
+  String get voidAlarmExactAlarmDeniedMessage;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
