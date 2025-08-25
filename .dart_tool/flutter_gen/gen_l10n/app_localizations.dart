@@ -130,6 +130,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'English'**
   String get english;
+
+  /// No description provided for @darkMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark Mode'**
+  String get darkMode;
+
+  /// No description provided for @voidAlarmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Void Alarm'**
+  String get voidAlarmTitle;
+
+  /// No description provided for @voidAlarmEnabledMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Void alarm has been activated.'**
+  String get voidAlarmEnabledMessage;
+
+  /// No description provided for @voidAlarmDisabledMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Void alarm has been deactivated.'**
+  String get voidAlarmDisabledMessage;
+
+  /// No description provided for @feedbackTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback'**
+  String get feedbackTitle;
+
+  /// No description provided for @mailAppError.
+  ///
+  /// In en, this message translates to:
+  /// **'Cannot open mail app. Please check your default mail app settings.'**
+  String get mailAppError;
+
+  /// No description provided for @contactEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Arion.Ayin@gmail.com'**
+  String get contactEmail;
+
+  /// No description provided for @infoScreenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Info'**
+  String get infoScreenTitle;
+
+  /// No description provided for @headerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Void of Course Calculator'**
+  String get headerSubtitle;
+
+  /// No description provided for @whoAreWeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Who are we?'**
+  String get whoAreWeTitle;
+
+  /// No description provided for @whoAreWeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'• Arion Ayin\'s Mission: \nFathoming the world with the eyes of a lion\n'**
+  String get whoAreWeSubtitle;
+
+  /// No description provided for @whoIsItUsefulForTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Who is it useful for?'**
+  String get whoIsItUsefulForTitle;
+
+  /// No description provided for @whoIsItUsefulForSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'• Those who need simple date selection\n• Those who need Void of Course calculations\n• Those who need an indicator for action\n'**
+  String get whoIsItUsefulForSubtitle;
+
+  /// No description provided for @whyDidWeMakeThisAppTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Why did we make this app?'**
+  String get whyDidWeMakeThisAppTitle;
+
+  /// No description provided for @whyDidWeMakeThisAppSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'• With the hope that anyone can easily \n  access this information.\n'**
+  String get whyDidWeMakeThisAppSubtitle;
+
+  /// No description provided for @copyrightText.
+  ///
+  /// In en, this message translates to:
+  /// **'© 2025 Arion Ayin. All rights reserved.'**
+  String get copyrightText;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
